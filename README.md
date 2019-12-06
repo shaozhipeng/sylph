@@ -1,3 +1,25 @@
+# sqlite data.db
+
+```sql
+select * from running
+```
+
+```text
+job_id  run_id                      runtime_type  start_time
+5	application_1562228593447_0002	yarn	1562229035955
+```
+
+本地启动时，删除此条数据记录
+
+```sql
+DELETE FROM running where job_id=5 
+```
+
+# 用户名密码
+
+"随便写" 比如... admin/admin
+
+
 # Sylph [![Build Status](http://img.shields.io/travis/harbby/sylph.svg?style=flat&branch=master)](https://travis-ci.org/harbby/sylph)
 The Sylph is Streaming Job Manager. 
 
